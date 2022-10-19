@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+/* variables for colors */
+:root {
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+
+/* reseting spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 327px;
+    margin: 0 auto;
+}
+
+
+/* making images responsive/easier to work with */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'Raleway';
+    color: var(--very-dark-blue);
+}
+
+nav ul {    
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+#logo {
+    height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sec-1 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+/* or 150% */  
+    color: var(--very-dark-blue);
+}
+
+.sec-1 p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* or 150% */
+    color: var(--very-dark-blue);
+    margin-top: 24px;
+}
+
+.sec-1 input {
+    margin-top: 32px;
+}
+
+input {
+    width: 304px;
+    height: 40px;
+    border-radius: 3.13px;
+    box-shadow: 2px 3px 6px 0px #00000029;
+    outline: none;
+    border: 0.63px solid var(--very-dark-blue);
+    padding-left: 21px;
+}
+
+button {
+    width: 304px;
+    height: 40px;
+    border-radius: 3.13px;
+    background-color: var(--bright-blue);
+    border: none;
+    box-shadow: 2px 3px 6px 0px #00000029;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Raleway';
+    margin-top: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.card {
+    height: 169.1011199951172px;
+    width: 280px;
+    border-radius: 3.9px;
+    box-shadow: 0px 0px 8px 4px #3838380C;
+
+}
+
+.card-text::before {
+    content: open-quote;
+    font-weight: 400;
+    font-size: 35px;
+    /* line-height: 53px; */
+    margin-top: 10px;
+    color: var(--very-dark-blue);
+}
+
+.card-text {
+    width: 241px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    /* or 181% */
+    letter-spacing: 0.384615px;
+    color: var(--very-dark-blue);
+    margin-bottom: 12px;
+}
+
+.testimonial {
+    display: flex;
+    gap: 7px;
+}
+
+.testimonial img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+span {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    line-height: 12px;
+    font-size: 6px;
+    letter-spacing: 0.3px;
+}
+
+span.bold {
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: 0.45px;
+    font-weight: 700;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8px;
+}
+
+.access {
+    background-color: var(--desaturated-blue);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-blue);
+    color: white;
+}
+
+.phone, .email {
+    display: flex;
+}
+
+
+footer .logo {
+    filter: invert(50%) brightness(1000%) ;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    
+}
+
+footer li {
+    color: white;
+}
