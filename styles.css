@@ -17,13 +17,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
-body {
-    width: 327px;
-    margin: 0 auto;
-}
-
 
 /* making images responsive/easier to work with */
 img {
@@ -36,6 +31,10 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-top: 24px;
+    width: 327px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 li {
@@ -53,10 +52,8 @@ nav ul {
     gap: 24px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
+
+/* ori id maqvs gamoyenebuli ertidaigive */
 #logo {
     height: 24px;
 }
@@ -72,6 +69,8 @@ a {
     flex-direction: column;
     gap: 40px;
     text-align: center;
+    width: 327px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -83,18 +82,50 @@ h1 {
     color: var(--very-dark-blue);
 }
 
-.sec-1 p {
+h3 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */  
+    color: var(--very-dark-blue);
+}
+
+.sec-2  {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light-grayish-blue);
+}
+
+.wrapper {
+    width: 327px;
+    margin: 0 auto;
+}
+
+.wrap-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     /* or 150% */
     color: var(--very-dark-blue);
-    margin-top: 24px;
+    /* margin-top: 24px; */
 }
 
 .sec-1 input {
     margin-top: 32px;
+}
+
+.sec-1 button {
+    margin-top: 16px;
 }
 
 input {
@@ -118,27 +149,31 @@ button {
     font-size: 14px;
     line-height: 16px;
     font-family: 'Raleway';
-    margin-top: 16px;
     color: white;
     cursor: pointer;
 }
 
 .card {
-    height: 169.1011199951172px;
+    height: 169.1px;
     width: 280px;
     border-radius: 3.9px;
     box-shadow: 0px 0px 8px 4px #3838380C;
-
+    margin-bottom: 80px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left; 
 }
 
-.card-text::before {
-    content: open-quote;
-    font-weight: 400;
-    font-size: 35px;
-    /* line-height: 53px; */
-    margin-top: 10px;
-    color: var(--very-dark-blue);
+
+
+#quotes {
+    max-width: 14px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
+
 
 .card-text {
     width: 241px;
@@ -156,6 +191,11 @@ button {
     letter-spacing: 0.384615px;
     color: var(--very-dark-blue);
     margin-bottom: 12px;
+}
+
+.ill-1 {
+    width: 327px;
+    margin: 0 auto;
 }
 
 .testimonial {
@@ -190,31 +230,48 @@ span.bold {
     gap: 1.8px;
 }
 
-.access {
-    background-color: var(--desaturated-blue);
-}
+
 
 footer {
     display: flex;
     flex-direction: column;
     background-color: var(--very-dark-blue);
     color: white;
+    gap: 32px;
 }
+
 
 .phone, .email {
     display: flex;
+    gap: 18px;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 327px;
+    margin: 0 auto;
+}
 
 footer .logo {
     filter: invert(50%) brightness(1000%) ;
+    width: 327px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 30px;
 }
+
 
 footer nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+    width: 327px;
+    margin: 0 auto;
+    margin-bottom: 32px;
 }
 
 footer ul {
@@ -226,5 +283,44 @@ footer ul {
 }
 
 footer li {
+    color: white;
+}
+
+.access {
+    background-color: var(--desaturated-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 345px;
+    width: 375px;
+}
+
+.child-1, .child-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.access input, .access button {
+    height: 32px;
+    width: 240px;
+    border-radius: 1.5px;
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 8px;
+}
+
+h2 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+.access p, footer p {
     color: white;
 }
