@@ -342,3 +342,15 @@ h2 {
     margin-bottom: -10px;
     margin-top: 90px;
 }
+
+.socials {
+    display: flex;
+    gap: 10px;
+    align-self: center;
+    margin-bottom: 42px;
+}
+
+.soc {
+    width: 30px;
+
+}
