@@ -164,6 +164,7 @@ button {
     flex-direction: column;
     gap: 10px;
     text-align: left; 
+    background-color: white;
 }
 
 
@@ -261,6 +262,7 @@ footer .logo {
     display: flex;
     align-items: center;
     height: 30px;
+    margin-top: 65px;
 }
 
 
@@ -293,6 +295,7 @@ footer li {
     justify-content: center;
     height: 345px;
     width: 375px;
+    gap: 24px;
 }
 
 .child-1, .child-2 {
@@ -304,13 +307,22 @@ footer li {
     text-align: center;
 }
 
+
+.child-1 {
+    gap: 16px;
+}
+
+.child-2  {
+    gap: 8px;
+}
+
+
 .access input, .access button {
     height: 32px;
     width: 240px;
     border-radius: 1.5px;
     font-size: 10px;
     line-height: 12px;
-    margin-top: 8px;
 }
 
 h2 {
@@ -323,4 +335,10 @@ h2 {
 
 .access p, footer p {
     color: white;
+}
+
+#curve {
+    z-index: -99;
+    margin-bottom: -10px;
+    margin-top: 90px;
 }
