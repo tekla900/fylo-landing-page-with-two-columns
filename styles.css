@@ -58,6 +58,10 @@ nav ul {
 a {
     text-decoration: none;
     color: inherit;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .sec-1 {
@@ -144,7 +148,12 @@ button {
     color: white;
     cursor: pointer;
 }
-
+button:hover{
+    background-color: #6C9BFF;
+}
+a:hover {
+    color: #6C9BFF;
+} 
 .card {
     height: 169.1px;
     width: 280px;
@@ -343,7 +352,27 @@ h2 {
 
 .soc {
     width: 30px;
+}
+.soc:hover {
+    filter: invert(58%) sepia(23%) saturate(2086%) hue-rotate(195deg) brightness(100%) contrast(103%);
+}
 
+.wrap-2 a {
+    display: flex;
+    gap: 8px;
+    padding-bottom: 4px;
+    align-items: center;
+    color: var(--moderate-cyan);
+    border-bottom: 1px solid var(--moderate-cyan);
+}
+
+.wrap-2 a:hover {
+    color: #71DFCC;
+    border-bottom: 1px solid #71DFCC;
+}
+
+.wrap-2 a img:hover {
+    filter: invert(82%) sepia(40%) saturate(427%) hue-rotate(113deg) brightness(92%) contrast(93%);
 }
 
 @media (min-width: 1280px) {
