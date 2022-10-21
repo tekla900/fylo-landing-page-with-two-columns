@@ -11,13 +11,11 @@
     --light-gray: hsl(0, 0%, 75%);
 }
 
-
 /* reseting spacing */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 
 /* making images responsive/easier to work with */
@@ -30,7 +28,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 24px;
     width: 327px;
     margin: 0 auto;
     margin-top: 30px;
@@ -64,7 +61,6 @@ a {
 }
 
 .sec-1 {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -77,8 +73,7 @@ h1 {
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 24px;
-    line-height: 36px;
-/* or 150% */  
+    line-height: 150%;
     color: var(--very-dark-blue);
 }
 
@@ -86,8 +81,7 @@ h3 {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */  
+    line-height: 150%;  
     color: var(--very-dark-blue);
 }
 
@@ -114,10 +108,8 @@ p {
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 14px;
-    line-height: 21px;
-    /* or 150% */
+    line-height: 150%;
     color: var(--very-dark-blue);
-    /* margin-top: 24px; */
 }
 
 .sec-1 input {
@@ -195,7 +187,7 @@ button {
 }
 
 .ill-1 {
-    width: 327px;
+    max-width: 327px;
     margin: 0 auto;
 }
 
@@ -294,7 +286,6 @@ footer li {
     flex-direction: column;
     justify-content: center;
     height: 345px;
-    width: 375px;
     gap: 24px;
 }
 
@@ -337,7 +328,7 @@ h2 {
     color: white;
 }
 
-#curve {
+#curve-mb {
     z-index: -99;
     margin-bottom: -10px;
     margin-top: 90px;
@@ -352,5 +343,237 @@ h2 {
 
 .soc {
     width: 30px;
+
+}
+
+@media (min-width: 1280px) {
+    header {
+        width: 1280px;
+        margin-top: 80px;
+    }
+    li {
+        list-style: none;
+        font-size: 16px;
+        line-height: 18.78px;
+    }
+    nav ul {    
+        gap: 57px;
+    }
+    #logo {
+        height: 49px;
+    }
+
+    .sec-1 {
+        flex-direction: row-reverse;
+        gap: 13px;
+        text-align: left;
+        width: 1280px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .ill-2 {
+        max-width: 50%;
+    }
+
+    input {
+        width: 320px;
+        height: 45px;
+    }
+
+    button {
+        width: 200px;
+        height: 45px;
+        margin-left: 16px;
+    }
+   
+    h1 {
+        font-size: 40px;
+        
+    }
+    p {
+        font-size: 17px;
+        letter-spacing: 0.5px;
+    }
+
+    .sec-1 input {
+        margin-top: 25px;
+    }
+
+    .sec-1 p {
+        margin-top: 15px;
+        width: 585px;
+        letter-spacing: 0.53px;
+    }
+
+    #curve-mb {
+        display: none;
+    }
+
+    .sec-2  {
+        flex-direction: row-reverse;
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+    }
+
+    .ill-1 {
+        max-width: 542px;
+    }
+    .wrapper {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .wrap-1 p {
+        width: 529px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    .wrap-1 h3 {
+        font-size: 40px;
+        
+        margin-bottom: 38px;
+        margin-top: 100px;
+    }
+
+    .wrap-2 {
+        align-items: flex-start;
+    }
+    .card {
+        height: 215px;
+        width: 356px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 5px #3838380C;
+        margin-bottom: 107px;
+        margin-top: 45px;
+        gap: 10px;
+    }
+
+    .card-text {
+        width: 289px;
+        gap: 18px;
+    }
+    
+    .card-text p {
+        font-size: 13px;
+        line-height: 181%;
+        letter-spacing: 0.5px;
+        margin: 0;
+    }
+
+    .testimonial {
+        align-items: center;
+    }
+    
+    .testimonial img {
+        width: 32px;
+        height: 32px;
+    }
+    span {
+        line-height: 15px;
+        font-size: 8px;
+        letter-spacing: 0.4px;
+    }
+    
+    span.bold {
+        font-size: 11px;
+        line-height: 14.98px;
+        letter-spacing: 0.55px;
+    }
+        
+    .access {
+        flex-direction: row;
+        align-items: center;
+        height: 322px;
+        gap: 227px;
+    }
+    
+    .child-1, .child-2 {
+        align-items: center;
+        align-items: flex-start;
+        text-align: left;
+        width: min(50%, 533px);
+        margin: 0 auto;
+    }
+    
+    .child-1 {
+        gap: 7px;
+    }
+    
+    .child-2  {
+        gap: 34px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .child-2 button {
+        height: 48px;
+        width: 200px;
+        border-radius: 3.125px;     
+        margin: 0;   
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .child-2 input {
+        height: 48px;
+        width: 480px;
+        border-radius: 3.125px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    footer {
+        align-items: flex-start;
+        gap: 47px;
+    }
+
+    .ftr {
+        display: flex;
+        gap: 200px; 
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    .phone, .email {
+        display: flex;
+        gap: 18px;
+    }
+
+    .socials {
+        align-self: flex-start;
+    }
+
+    .contact {
+        width: auto;
+        margin: 0;
+    }
+
+    footer .logo {
+        width: 1280px;
+        height: 39px;
+        margin-top: 92px;
+    }
+
+    footer nav {
+        flex-direction: row;
+        width: auto;
+        gap: 200px;
+    }
+
+    footer ul {
+        gap: 38px;
+    }
+    .icon  {
+        max-width: 16px;
+    }
+
 
 }
