@@ -102,6 +102,7 @@ h3 {
     margin: 0 auto;
 }
 
+
 .wrap-2 {
     display: flex;
     flex-direction: column;
@@ -343,6 +344,10 @@ h2 {
     margin-top: 90px;
 }
 
+#curve-lp {
+    display: none;
+}
+
 .socials {
     display: flex;
     gap: 10px;
@@ -409,12 +414,16 @@ h2 {
         height: 45px;
     }
 
+    .sec-1 button {
+        margin: 0;
+        margin-left: 16px;
+    }
+
     button {
         width: 200px;
         height: 45px;
-        margin-left: 16px;
     }
-   
+  
     h1 {
         font-size: 40px;
         
@@ -425,17 +434,24 @@ h2 {
     }
 
     .sec-1 input {
-        margin-top: 25px;
+        margin-top: 0;
     }
 
     .sec-1 p {
         margin-top: 15px;
         width: 585px;
         letter-spacing: 0.53px;
+        margin-bottom: 34px;
     }
 
     #curve-mb {
         display: none;
+    }
+
+    #curve-lp {
+        display: block;
+        z-index: -99;
+        margin-bottom: -10px;
     }
 
     .sec-2  {
@@ -531,11 +547,6 @@ h2 {
         gap: 7px;
     }
     
-    .child-2  {
-        gap: 34px;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
     
     .child-2 button {
         height: 48px;
@@ -544,6 +555,7 @@ h2 {
         margin: 0;   
         font-size: 10px;
         line-height: 12px;
+        margin-top: 14px;
     }
 
     .child-2 input {

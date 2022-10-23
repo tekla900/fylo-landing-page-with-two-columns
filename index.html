@@ -38,17 +38,20 @@
       <div class="content">
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p>Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
-        <input type="email" name="email" id="email" placeholder="Enter your email...">
-        <button>Get Started</button>
+        <form action="#">
+            <input type="email" name="email" id="email" placeholder="Enter your email...">
+            <button>Get Started</button>
+        </form>
+        <span id="span-1"></span>
       </div>
     </section>
 
     <img src="./images/bg-curve-mobile.svg" id="curve-mb">
-
+    <img src="./images/bg-curve-desktop.svg" id="curve-lp">
     <section class="sec-2">
 
       <img src="./images/illustration-2.svg" class="ill-1">
-
+      
       <div class="wrapper">
 
 
@@ -91,8 +94,12 @@
       </div>
       
       <div class="child-2">
-        <input type="email" name="email" id="email-2" placeholder="email@example.com">
-        <button> Get Started For Free</button>
+        <form action="#">
+          <input type="email" name="email" id="email-2" placeholder="email@example.com">
+          <span id="span-2"></span>
+          <button type="button"> Get Started For Free</button>
+        </form>
+       
       </div>
     </section>
 
@@ -149,5 +156,7 @@
       Coded by <a href="https://github.com/tekla900">Tekla Inashvili</a>.
     </p>
   </footer>
+
+  <script src="./scripts.js"></script>
 </body>
 </html>
